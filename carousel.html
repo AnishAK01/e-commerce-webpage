@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popupstyle.css">
+    <title>Carousel</title>
+</head>
+<body>
+    
+    <div class="container360">
+        <input type="range" value="" min="0" max="4" id="slider-range" oninput="update360()" class="grab" />
+        <div id="main360">
+          <img src="Assets/puma/2.png" id="image360" />
+          <div id="base360"></div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      
+   <div class="main-container">
+    <div class="categories ">
+    
+     <div id="men-sport" onclick="mensportsshoe()"> <i class="fa-solid fa-play arrow" ></i></div>
+    <div id="men-run"></div>
+    <div id="sneaker"></div>
+    <div id="woman-sport"></div>
+    <div id="woman-run"></div>
+    <div id="man-casual"></div>
+    <div id="woman-casual"></div>
+    <div id="man-party"></div>
+    <div id="woman-party"></div>
+    
+    </div>
+    <div class="filter ">
+    
+<div class="btn-group">
+  <button type="button" class="btn btn-info" style="color: aliceblue;">Sort</button>
+  <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" id="lowPrice" href="#">Price Low->High</a></li>
+    <li><a class="dropdown-item" id="highPrice" href="#">Price High->Low</a></li>
+    <!-- <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul> -->
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-info" style="color: aliceblue;">Filter-Brand</button>
+  <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" id="lowPrice" href="#">Reebok</a></li>
+    <li><a class="dropdown-item" id="highPrice" href="#">Addidas</a></li>
+    <li><a class="dropdown-item" href="#">Canvas</a></li>
+    <li><a class="dropdown-item" href="#">Sparx</a></li>
+    <li><a class="dropdown-item" href="#">Nike</a></li>
+    <li><a class="dropdown-item" href="#">Gucci</a></li>
+    
+    <!-- <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+  </ul>
+</div>
+    </div>
+    <div class="list ">
+      <div id="reebok">
+        <div id="sneaker" class="card " onclick="pop()">
+          <div class="image">
+            <img src="Assets/cardimg-1.jpg" alt="">
+
+          </div>
+          <div class="line-1">
+            <div class="title">
+              <h4>Reebok</h4>
+            </div>
+            <div class="modelnum">
+              <p>rb0m1</p>
+            </div>
+            <div class="price">
+              <h4>₹1949</h4>
+            </div>
+          </div>
+          <div class="line-2 ">
+            <p class="card-desc">Mens Smart Trek M Sneaker
+            </p>
+          </div>
+          <div class="line-3">
+            <!-- <button class="buy-btn">Buy Now</button> -->
+            <div data-tooltip="Price:-₹1949" class="button">
+              <div class="button-wrapper">
+                <div class="text">Add to Cart</div>
+                <span class="icon">
+                  <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+
+            <button class="cart-btn">
+              <span>Buy Now</span>
+            </button>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div> 
+      <script src="carouselScript.js"></script>
+</body>
+</html>
